@@ -15,15 +15,20 @@ A streamlined GTK-based application for managing and navigating text files throu
 ## Installation
 1. Clone the repository:
    ```bash
-    mkdir -p ~/Development
-    cd ~/Development
+
+    cd ~/.local/share
     git clone https://github.com/peytongraf/shortcuts-app.git
     cd shortcuts-app
+
 2. Make the script executable
     ```bash
     chmod +x shortcuts.py
 
+3. (Optional) Create a symbolic link to run the app from anywhere: 
+    ```bash
+    ln -s ~/.local/share/shortcuts-app/shortcuts.py ~/.local/bin/shortcuts
+
 ## Hyprland integration
 - To launch the Shortcuts App using a keybind in Hyprland, add the following line to your hyprland.conf file, replacing $mainMod and S with your desired modifier and key:
 ```bash
-    bind = $mainMod, S, exec, ~/Development/shortcuts-app/shortcuts.py
+    bind = $mainMod, S, exec, ~/.local/share/shortcuts-app/shortcuts.py
