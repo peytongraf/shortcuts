@@ -1,87 +1,109 @@
+/* ================================
+   Global Styles
+   ================================ */
 * {
-  background-color: #171717;
   color: #ffffff;
   font-family: "Hack Nerd Font", sans-serif;
+  /*outline: none;*/
+  /*box-shadow: none;*/
+  background: none;
 }
 
-box {
-  padding: 10px;
+/* Style the window background */
+window {
+  /*background-color: #000000;*/
+  background-color: rgba(0, 0, 0, 0.8);
+  /* Set to match the main container */
 }
 
-/* ================================
-   Title Label Style
-   ================================ */
-label.title-label {
-  font-size: 24px;
-  /* Larger font size for the title */
-  font-weight: bold;
-  /* Bold text */
-  color: #ffffff;
-  /* Green color for the title */
-  margin-top: 10px;
-  /* Add space above the title */
-  margin-bottom: 10px;
-  /* Add space below the title */
-}
-
-/* ================================
-   Shortcut Name Styles
-   ================================ */
-label.shortcut-name {
-  color: #898e91;
-  /* Green color for shortcut name */
-  font-weight: bold;
-  font-size: 14px;
-  /* Font size for shortcut name */
-}
-
-/* ================================
-   Shortcut Key Styles
-   ================================ */
-label.shortcut-key {
-  color: #ffffff;
-  /* Blue color for shortcut key */
-  font-weight: normal;
-  font-size: 14px;
-  /* Font size for shortcut key */
-}
-
-/* ================================
-   Row Styles
-   ================================ */
-.list-row {
-  background-color: #1e1e1e;
-  /* Dark gray background for rows */
-  color: #ffffff;
-  /* White text for contrast */
-  border-radius: 1px;
-  /* Rounded corners for rows */
-  padding: 2px;
-  /* Padding inside each row */
-  margin-bottom: 2px;
-  /* Space between rows */
-  border: 1px solid #333333;
-  /* Optional border around rows */
-}
-
-/* Change row background on hover */
-.list-row:hover {
-  background-color: #333333;
-  /* Lighter gray when hovered */
-}
-
-/* Change row background when selected */
-.list-row:selected {
-  background-color: #0055ff;
-  /* Blue background for selected rows */
-  color: #ffffff;
-  /* Ensure text remains readable */
-}
-
-/* Remove borders from all ListBoxRows */
-listboxrow {
+/* Style the main container (vertical box holding all content) */
+.main-container {
+  /*background-color: #000000;*/
+  padding: 0;
+  margin: 0;
   border: none;
-  /* Ensure no borders are applied */
+  overflow: hidden;
+  /* Prevent any sliver of white */
+}
+
+/* Notebook container styles */
+.notebook-container {
+  /*background-color: #000000;*/
+  padding: 0;
+  margin: 0;
+  border: none;
+  overflow: hidden;
+  /* Prevent overflow outside the notebook */
+}
+
+/* Style for individual tabs */
+tab {
+  font-size: 20px;
+  font-weight: bold;
+  background-color: rgba(90, 90, 90, 0.8);
+  padding: 4px;
+  border-radius: 8px 8px 0 0;
+  margin: 0 4px;
   box-shadow: none;
-  /* Remove any shadow effects */
+  outline: none;
+}
+
+/* Style the selected tab (active tab) */
+notebook>header tab:selected,
+notebook>header tab:checked {
+  background-color: rgba(2, 132, 199, 0.8);
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  /*border-bottom: none;*/
+  box-shadow: none;
+  outline: none;
+}
+
+tab:hover {
+  background-color: #27272a;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  /*border-bottom: none;*/
+  box-shadow: none;
+  outline: none;
+}
+
+/* Style for the grid container (columns holding content) */
+.columns-container {
+  /*background-color: #000000;*/
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 0;
+  overflow: hidden;
+  /* Prevent overflow showing white edges */
+}
+
+/* Style for individual rows in the grid */
+.row-box {
+  background-color: rgba(80, 80, 80, 0.5);
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #333333;
+  display: flex;
+  align-items: center;
+}
+
+/* Hover effect for rows */
+.row-box:hover {
+  background-color: #333333;
+  transition: background-color 0.2s ease;
+}
+
+/* Title Label Style */
+label.title-label {
+  font-size: 32px;
+  /* Increased title text size */
+  font-weight: bold;
+  color: #ffffff;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  /* Add more space below the title */
+  text-align: center;
 }
