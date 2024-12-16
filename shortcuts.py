@@ -86,8 +86,8 @@ def load_hyprland_keybinds():
                             key = parts[1].strip()
                             command = ",".join(parts[2:]).strip()
 
-                            # Store the key and its command as a key-value pair
-                            keybinds[f"{modifiers} + {key}"] = command
+                            # Reverse: store the command as the key and the keybind as the value
+                            keybinds[command] = f"{modifiers} + {key}"
                     except ValueError:
                         print(f"Could not parse line: {line}")
     else:
