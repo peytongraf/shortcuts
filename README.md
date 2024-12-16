@@ -19,7 +19,7 @@ A streamlined GTK-based application for managing and navigating text files throu
     cd ~/Development
     git clone https://github.com/peytongraf/shortcuts-app.git
     cd shortcuts-app
-2. Make the sciprt executable
+2. Make the script executable
     ```bash
     chmod +x shortcuts.py
 
