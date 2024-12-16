@@ -1,0 +1,87 @@
+* {
+  background-color: #171717;
+  color: #ffffff;
+  font-family: "Hack Nerd Font", sans-serif;
+}
+
+box {
+  padding: 10px;
+}
+
+/* ================================
+   Title Label Style
+   ================================ */
+label.title-label {
+  font-size: 24px;
+  /* Larger font size for the title */
+  font-weight: bold;
+  /* Bold text */
+  color: #ffffff;
+  /* Green color for the title */
+  margin-top: 10px;
+  /* Add space above the title */
+  margin-bottom: 10px;
+  /* Add space below the title */
+}
+
+/* ================================
+   Shortcut Name Styles
+   ================================ */
+label.shortcut-name {
+  color: #898e91;
+  /* Green color for shortcut name */
+  font-weight: bold;
+  font-size: 14px;
+  /* Font size for shortcut name */
+}
+
+/* ================================
+   Shortcut Key Styles
+   ================================ */
+label.shortcut-key {
+  color: #ffffff;
+  /* Blue color for shortcut key */
+  font-weight: normal;
+  font-size: 14px;
+  /* Font size for shortcut key */
+}
+
+/* ================================
+   Row Styles
+   ================================ */
+.list-row {
+  background-color: #1e1e1e;
+  /* Dark gray background for rows */
+  color: #ffffff;
+  /* White text for contrast */
+  border-radius: 1px;
+  /* Rounded corners for rows */
+  padding: 2px;
+  /* Padding inside each row */
+  margin-bottom: 2px;
+  /* Space between rows */
+  border: 1px solid #333333;
+  /* Optional border around rows */
+}
+
+/* Change row background on hover */
+.list-row:hover {
+  background-color: #333333;
+  /* Lighter gray when hovered */
+}
+
+/* Change row background when selected */
+.list-row:selected {
+  background-color: #0055ff;
+  /* Blue background for selected rows */
+  color: #ffffff;
+  /* Ensure text remains readable */
+}
+
+/* Remove borders from all ListBoxRows */
+listboxrow {
+  border: none;
+  /* Ensure no borders are applied */
+  box-shadow: none;
+  /* Remove any shadow effects */
+}
