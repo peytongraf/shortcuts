@@ -1,4 +1,4 @@
-# Shortcuts App
+# Shortcuts
 
 A streamlined GTK-based application for managing and navigating text files through an intuitive tabbed interface.
 
@@ -17,8 +17,8 @@ A streamlined GTK-based application for managing and navigating text files throu
    ```bash
 
     cd ~/.local/share
-    git clone https://github.com/peytongraf/shortcuts-app.git
-    cd shortcuts-app
+    git clone https://github.com/peytongraf/shortcuts.git
+    cd shortcuts
 
 2. Make the script executable
     ```bash
